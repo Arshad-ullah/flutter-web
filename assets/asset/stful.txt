@@ -1,0 +1,37 @@
+StateFull Widgets:
+
+Stateful Widgets are dynamic widgets. They can be updated during runtime based on user action or data change.
+ Stateful Widgets have an internal state and can re-render if the input data changes 
+or if Widget's state changes. For Example: Checkbox, Radio Button,
+ Slider are Stateful Widgets.
+
+ Stateful widgets have a mutable state and they are mutable and can be drawn multiple times within its lifetime.
+
+
+ Basically they are the widgets which they can change the heir state multiple
+
+ times and can be redrawn on to the screen any number of times while the app is in action.
+
+ They are dynamic. To create a Stateful widget, we have to override the createState() method,
+
+  which returns the state of the widget.
+
+ Forexample: CheckBox,Button,
+
+
+ import 'package:flutter/material.dart';
+
+
+ class Testing extends StatefulWidget {
+   const Testing({Key? key}) : super(key: key);
+
+   @override
+   _TestingState createState() => _TestingState();
+ }
+
+ class _TestingState extends State<Testing> {
+   @override
+   Widget build(BuildContext context) {
+     return Container();
+   }
+ }
